@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吴秋宇 - 个人简历表</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+        }
+        body {
+            background-color: #fff;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        .resume-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #000;
+            font-size: 14px;
+        }
+        .resume-table th, .resume-table td {
+            border: 1px solid #000;
+            padding: 6px 8px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        .resume-table th {
+            background-color: #f5f5f5;
+            font-weight: bold;
+        }
+        .photo-cell {
+            text-align: center;
+            background-color: #fafafa;
+            padding: 10px;
+            /* 适配放大后的照片，增加单元格最小高度 */
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        /* 照片放大为 120x160px（保持3:4证件照比例，比原尺寸大50%） */
+        .profile-photo {
+            width: 120px;
+            height: 160px;
+            border: 1px solid #ddd;
+            object-fit: cover; /* 保证照片比例不拉伸，裁剪多余部分 */
+        }
+        .photo-placeholder {
+            color: #666;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+        /* 适配打印和小屏幕 */
+        @media print {
+            body {
+                padding: 0;
+            }
+            .resume-table {
+                font-size: 12px;
+            }
+            .profile-photo {
+                width: 100px;
+                height: 130px; /* 打印时适当缩小，节省空间 */
+            }
+        }
+        @media (max-width: 768px) {
+            .resume-table {
+                font-size: 12px;
+            }
+            .resume-table th, .resume-table td {
+                padding: 4px 6px;
+            }
+            .profile-photo {
+                width: 90px;
+                height: 120px; /* 小屏幕适配尺寸 */
+            }
+            .photo-cell {
+                min-height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table class="resume-table">
+        <!-- 表头标题（移除多余斜杠） -->
+        <tr>
+            <th colspan="6">个人简历表/</th>
+        </tr>
+        <!-- 基本信息区域（移除标题后多余斜杠） -->
+        <tr>
+            <th rowspan="7" style="vertical-align: top; padding-top: 8px;">基本信息/</th>
+            <td>姓名</td>
+            <td>吴秋宇</td>
+            <td>性别</td>
+            <td>男</td>
+            <td rowspan="7" class="photo-cell">
+                <!-- 本地照片路径保持不变，放大显示尺寸 -->
+                <img src="C:\Users\吴秋宇\Pictures\Camera Roll\R-C.jpg" alt="个人照片" class="profile-photo">
+                <div class="photo-placeholder">照片</div>
+            </td>
+        </tr>
+        <tr>
+            <td>出生日期</td>
+            <td>2004.07.06</td>
+            <td>民族</td>
+            <td>汉</td>
+        </tr>
+        <tr>
+            <td>政治面貌</td>
+            <td>团员</td>
+            <td>婚姻状况</td>
+            <td>未婚</td>
+        </tr>
+        <tr>
+            <td>学历</td>
+            <td>本科</td>
+            <td>联系地址</td>
+            <td>云南省昆明市宜良县</td>
+        </tr>
+        <tr>
+            <td>专业</td>
+            <td>测绘工程</td>
+            <td>联系电话</td>
+            <td>15559824981</td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td colspan="3">2467796078@qq.com</td>
+        </tr>
+        <tr>
+            <td>毕业院校</td>
+            <td colspan="3">西南林业大学</td>
+        </tr>
+        <!-- 学习经历（移除多余斜杠） -->
+        <tr>
+            <th rowspan="1" style="vertical-align: top; padding-top: 8px;">学习经历/</th>
+            <td colspan="5">
+                在测绘工程专业的学习中，我始终秉持“理论筑基、实践赋能”的理念，稳步夯实专业能力。课堂上，我系统钻研了测绘学基础、GPS原理与应用、地理信息系统等核心课程，重点攻克了水准测量精度控制、坐标转换等难点知识，构建起完整的专业知识体系。<br/>
+                实践学习是专业成长的关键。我积极参与校园地形勘测、工程放样等实训项目，熟练掌握了全站仪、水准仪的操作技巧，能独立完成闭合水准路线测量与数据处理。在团队协作中，我学会了结合GIS软件分析测绘数据，将理论知识精准转化为实操成果。<br/>
+                此外，我还通过专业竞赛打磨技能，在实践中深化对“精准严谨”专业准则的理解。这段学习经历不仅让我掌握了扎实的测绘技能，更培养了科学的探究精神，为未来投身测绘相关工作奠定了坚实基础。
+            </td>
+        </tr>
+        <!-- 证书技能（移除多余斜杠） -->
+        <tr>
+            <th rowspan="1" style="vertical-align: top; padding-top: 8px;">证书技能/</th>
+            <td colspan="5">
+                四级证书<br/>
+                普通话乙级
+            </td>
+        </tr>
+        <!-- 爱好特长（移除多余斜杠） -->
+        <tr>
+            <th rowspan="1" style="vertical-align: top; padding-top: 8px;">爱好特长/</th>
+            <td colspan="5">
+                打游戏<br/>
+                打羽毛球
+            </td>
+        </tr>
+        <!-- 自我评价（移除多余斜杠） -->
+        <tr>
+            <th rowspan="1" style="vertical-align: top; padding-top: 8px;">自我评价/</th>
+            <td colspan="5">
+                本人具备扎实的测绘工程专业知识，熟练掌握全站仪、水准仪操作及GIS数据处理技能，理论与实操能力兼备。实习期间严谨负责，精准完成多项测绘任务，为项目提供可靠数据支撑，积累了丰富的现场经验与团队协作能力。性格沉稳细致，秉持“精准严谨”的专业准则，具备较强的问题解决能力与学习适应性。对测绘行业充满热情，期待能将专业技能应用于实际工作，为相关领域发展贡献力量。
+            </td>
+        </tr>
+    </table>
+
+    <!-- 照片替换功能保留 -->
+    <script>
+        document.querySelector('.photo-cell').addEventListener('click', function() {
+            const fileInput = document.createElement('input');
+            fileInput.type = 'file';
+            fileInput.accept = 'image/*';
+            fileInput.onchange = function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(event) {
+                        document.querySelector('.profile-photo').src = event.target.result;
+                    };
+                    reader.readAsDataURL(file);
+                }
+            };
+            fileInput.click();
+        });
+    </script>
+</body>
+</html>
